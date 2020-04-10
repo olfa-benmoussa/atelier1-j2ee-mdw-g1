@@ -10,13 +10,15 @@ import javax.servlet.http.HttpServletResponse;
 
 public class BonjourServlet extends HttpServlet {
 
+public int i=0;
+    
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
+		   
 		resp.setContentType("text/html");
         resp.setCharacterEncoding("UTF-8");
-        
-        PrintWriter out =resp.getWriter();
+        i++;
+        PrintWriter out = resp.getWriter();
         out.println("<!DOCTYPE html>");
         out.println("<html>");
         out.println("<head>");
@@ -25,8 +27,11 @@ public class BonjourServlet extends HttpServlet {
         out.println("</head>");
         out.println("<body>");
         out.println("<p>Bonjour Iset Djerba!</p>");
+        out.println("<p>Cette Servlet a été accédée "+ i +" fois.</p>");
         out.println("</body>");
         out.println("</html>");
+       
+        
 	}
 
 	@Override
@@ -34,6 +39,6 @@ public class BonjourServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		super.doPost(req, resp);
 	}
-	
+
 
 }
