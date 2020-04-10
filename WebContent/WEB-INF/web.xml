@@ -9,4 +9,57 @@
 		<servlet-name>BonjourServlet</servlet-name>
 		<url-pattern>/bonjour</url-pattern>
 	</servlet-mapping>
+	
+	
+	<servlet>
+    <servlet-name>BonsoirServlet</servlet-name>
+    <servlet-class>tn.isetjb.servlet.BonsoirServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BonsoirServlet</servlet-name>
+    <url-pattern>/bonsoir</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>RediregeServlet</servlet-name>
+    <servlet-class>tn.isetjb.servlet.RediregeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RediregeServlet</servlet-name>
+    <url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>ParamServlet</servlet-name>
+    <servlet-class>tn.isetjb.servlet.ParamServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParamServlet</servlet-name>
+    <url-pattern>/param</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>InitialServlet</servlet-name>
+    <servlet-class>tn.isetjb.servlet.InitialServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitialServlet</servlet-name>
+    <url-pattern>/initial</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>ForwardServlet</servlet-name>
+    <servlet-class>tn.isetjb.servlet.ForwardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForwardServlet</servlet-name>
+    <url-pattern>/forward</url-pattern>
+    
+  </servlet-mapping>
+  
+  
 </web-app>
